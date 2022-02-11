@@ -1,0 +1,215 @@
+.FaqContainer{
+  padding: 30px 5px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.FaqWrapper{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.FaqColumn{
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-self: start;
+  flex-direction: column;
+}
+
+/*seccion faq*/
+.faqSection {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  background: transparent
+}
+
+/* estilo de los botones  */
+.faq {
+  border-color: #e1f5fe;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  /* border: none; */
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Comfortaa";
+  transition: background-color 0.6s ease;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+} 
+
+#faqS.active {
+  background: #ffcdd2;
+}
+#faqN.active {
+  background: #e1f5fe;
+}
+#faqM.active {
+  background: #e1fee6;
+}
+
+/* estilo del titulo del faq */
+
+.faqTitle {
+  margin-left: 30px;
+  padding: 10px;
+  font-family: "Comfortaa";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+/*Estilo y rotacion del icono*/
+
+
+.faqIcon {
+  margin-left: auto;
+  margin-right: 10px;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Estilo panel Faq */
+.faqContent {
+  width: 90%;
+  display: flexbox;
+  flex-direction: column;
+  overflow: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: max-height 0.6s ease;
+}
+
+#faqcolorS{
+  background: rgba(224, 101, 101, 0.6)!important;
+}
+#faqcolorN{
+  background-color: #bbdefb;
+}
+#faqcolorM{
+  background-color: #bbfbce;
+}
+
+/*Texto del Faq*/
+
+.faqText {
+  display: flex;
+  text-align: left!important;
+  flex-direction: column;
+  padding: 10px 10px 10px 40px;
+  font-size: 18px;
+  font-family: "Comfortaa";
+}
+
+/*Subtitulos*/
+
+.h2TS{
+  font-size: 30px;
+  color: #d32f2f;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Comfortaa";
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.h2TN{
+  font-size: 30px;
+  color: #1e88e5;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Comfortaa";
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.h2TM{
+  font-size: 30px;
+  color: #35b63b;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Comfortaa";
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/*texto contacto*/
+.pContacto{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  width: 50%;
+  align-self: center;
+  color: grey;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comfortaa";
+}
+
+#boton-contactoS{
+  background: #d32f2f;
+  width: auto;
+  padding: 7px 15px 7px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  align-self: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "Comfortaa";
+}
+
+#boton-contactoN{
+  background: #1890ff;
+  width: auto;
+  padding: 7px 15px 7px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  align-self: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "Comfortaa";
+}
+
+#boton-contactoM{
+  background: #35b63b;
+  width: auto;
+  padding: 7px 15px 7px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  align-self: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "Comfortaa";
+}
+
+#boton-contactoS:hover{
+  background: #ef6c00;
+  color: white;
+}
+
+#boton-contactoN:hover{
+  background: #155Db6;
+  color: white;
+}
+
+#boton-contactoM:hover{
+  background: #16661d;
+  color: white;
+}

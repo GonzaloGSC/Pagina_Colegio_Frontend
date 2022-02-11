@@ -1,0 +1,125 @@
+.ProfesionalContainer{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.ProfesionalWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+}
+  
+.ProfesionalColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.ProfesionalRow{
+  display: grid; 
+  width: 90%;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(230px, 1fr));
+  margin-bottom: 30px ;
+}
+
+.ProfesionalRow2{
+  display: grid; 
+  width: 90%;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+  margin-bottom: 30px ;
+}
+
+.ProfesionalRow3{
+  display: grid; 
+  width: 90%;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, minmax(230px, 1fr));
+  margin-bottom: 30px ;
+}
+
+
+
+
+.ProfesionalCard{
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: -9px 11px 24px -5px rgba(0,0,0,0.62);
+    -moz-box-shadow: -9px 11px 24px -5px rgba(0,0,0,0.62);
+    box-shadow: -9px 11px 24px -5px rgba(0,0,0,0.62);
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.ProfesionalTitulo{
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    font-family: "Comfortaa";
+  }
+
+.ProfesionalCargo{
+  font-size: 18px;
+  color: rgb(95, 93, 93);
+  font-weight: bold;
+  font-family: "Comfortaa";
+}
+
+.ProfesionalTexto{
+    display: flex;
+    text-align: justify;
+    text-align-last: left;
+    flex-direction: column;
+    padding: 10px 10px 40px 10px;
+    font-size: 18px;
+    color: Black;
+    margin:20px;
+    overflow-wrap: break-word;
+    font-family: "Comfortaa";
+}
+
+.ProfesionalImagen{
+  /* margin: 10px; */
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+} 
+
+
+#TamañoImagen{
+  border-radius: 8px;
+  object-fit: contain;
+  width: 100%;
+  /* height: 300px; */
+}
+
+#TamañoImagen2{
+  border-radius: 8px;
+  object-fit: contain;
+  width: 100%;
+}
+ 
+
+
+@media  (max-width: 930px) { /*960px antes*/
+    .ProfesionalRow{
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     text-align: center;
+     grid-gap: 10px;
+    }
+    .ProfesionalRow2, .ProfesionalRow3{
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      text-align: center;
+      grid-gap: 10px;
+     }
+}

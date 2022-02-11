@@ -1,0 +1,61 @@
+.DocumentosCovidContainer{
+    padding: 5px 5px;
+    align-items: center;
+    background: red;
+  }
+
+  
+  .DocumentosCovidWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  
+  .DocumentosCovidColumn{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .DocumentosCovidRow{
+    display: grid;
+    align-self: center;
+    align-items: center;
+    width: 80%;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+  }
+  
+  .TituloDocumentosCovid{
+    font-size: 38px;
+    color: cyan;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+      font-family: 'Comfortaa';
+    padding: 50px;
+  }
+    
+  .TextoDocumentosCovid{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 70%;
+    align-self: center;
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+      font-family: 'Comfortaa';
+    margin-bottom: 50px;
+  }
+  
+  @media  (max-width: 768px) {
+    .DocumentosCovidRow{
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      text-align: center;
+      grid-gap: 10px;
+    }
+  }

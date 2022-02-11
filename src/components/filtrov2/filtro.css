@@ -1,0 +1,257 @@
+.FiltroContainer{ 
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+.FiltroWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.FiltroColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.FiltroRow{
+    display: grid; 
+    margin-left: 20px;
+    width: 90%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, minmax(230px, 1fr));
+}
+
+
+.FiltroFormContainer{
+  width:80%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;  
+  padding-bottom: 30px;
+  display: flex;
+  /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+  background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
+  justify-content: center;
+}
+
+.FiltroForm{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.FiltroForm h1 {
+  font-size: 1rem;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 1rem;
+  font-family: 'Comfortaa';
+  color: #fff;
+}
+
+.FiltroForm-inputs {
+  margin-bottom: 0.5rem;
+  width: 90%;
+}
+
+.FiltroForm-inputs p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+ 
+.FiltroForm-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  color: #fff;
+  font-family: 'Comfortaa';
+
+}
+
+.FiltroForm-input {
+  display: block;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.FiltroForm-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+.FiltroForm-input-btn {
+  height: 50px;
+  margin-top: 20px;
+  
+  width: 40%;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(38, 169, 245) 0%,
+    rgb(10, 199, 202) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Comfortaa';
+
+}
+
+.FiltroForm-Eliminate-btn {
+  height: 50px;
+  margin-top: 20px;
+  font-family: 'Comfortaa';
+  width: 20%;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(245, 38, 38) 0%,
+    rgb(202, 10, 10) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.FiltroForm-Eliminate-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 39, 39) 0%,
+    rgb(245, 30, 30) 100%
+  );
+  transition: all 0.4s ease-out;
+  color: #fff;
+}
+
+#PC{
+  text-align: center;
+  font-family: 'Comfortaa';
+}
+#PC2{
+  text-align: center;
+  color: white;
+  font-family: 'Comfortaa';
+}
+
+.FiltroForm-input-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  color: #fff;
+}
+
+.FiltroForm-input-btn:disabled {
+  background: grey;
+  cursor: no-drop;
+}
+
+
+
+.FiltroForm-input-login {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  font-family: 'Comfortaa';
+
+}
+
+.FiltroForm-input-login a {
+  text-decoration: none;
+  color: #27cdff;
+  font-weight: 600;
+  font-family: 'Comfortaa';
+}
+
+.FiltroForm-input-message {
+  display: flex;
+  padding: 15px;
+  outline: none;
+  border-radius: 2px;
+  height: 100px;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.FiltroForm-input-message::placeholder {
+  color: #595959;
+  font-size: 12px;
+  font-family: 'Comfortaa';
+
+}
+
+#FiltroMargin{
+    margin-top: 50px;
+}
+
+.SubtituloFiltro{
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+  }
+
+  .TextoFiltro{
+    font-family: 'Comfortaa';
+    text-align: left;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+@media  (max-width: 1208px) { 
+    .FiltroRow{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        text-align: center;
+        grid-gap: 10px;  
+        width: 70%;
+    }
+}
+@media  (max-width: 768px) { 
+    .FiltroRow{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        text-align: center;
+        grid-gap: 10px;  
+    }
+    .SubtituloFiltro{
+        text-align: left;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    .TextoFiltro{
+        text-align: left;
+    }
+    .FiltroFormContainer{
+      width: 90%;
+    }
+    .FiltroForm-input-btn{
+        width: 60%;
+    }
+        
+}
+
+

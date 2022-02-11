@@ -1,0 +1,113 @@
+.InicioContainer{ 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+  }
+  
+.InicioWrapper{
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;  
+    width: 80%;
+}
+
+  
+.InicioColumn{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.InicioRow{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  /* grid-gap: 20px; */
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+}
+
+.InicioRow2{
+    /* background: red; */
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(2, minmax(auto, auto));
+}
+
+.LogoColegios{
+    width: 250px;
+    height: 250px;
+}
+
+.TextoInicio{
+    font-size: 30px;
+    color: #006cca;
+    text-align: center;
+    font-weight: bold;
+	font-family: 'Comfortaa';
+}
+
+
+
+.InicioRow2:hover{
+    transform: scale(1.2);
+    transition: all .4s ease-in-out;
+}
+
+.InicioRow2:hover > .TextoInicio{
+    color: #e2b11e;
+    transition: .5s ease-in-out;
+    transform: scale(1.2);
+}
+
+@media (min-width: 1920px){
+    .LogoColegios{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .InicioRow{
+        grid-template-columns: repeat(2,minmax(200px, 1fr));
+    }
+}
+
+@media  (max-width: 960px) {
+    .InicioRow{
+     grid-template-columns: repeat(1, minmax(200px, auto));
+     align-items: center;
+     justify-items: center;
+     grid-gap: 40px;
+     margin-bottom: 50px;
+    }
+    .LogoColegios{
+        width: 300px;
+        height: 300px;
+    }
+    .TextoInicio{
+        font-size: 20px;
+    }
+    .InicioContainer{
+        height: 200vh;
+    }
+}
+
+@media (max-width: 768) {
+    .LogoColegios{
+        width: 250px;
+        height: 250px;
+    }
+    .InicioContainer{
+        height: 220vh;
+    }
+
+}

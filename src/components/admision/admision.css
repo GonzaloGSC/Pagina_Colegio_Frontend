@@ -1,0 +1,502 @@
+.AdmisionContainer{ 
+    align-items: center;
+    width: 100%;
+  }
+  
+
+.AdmisionWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.AdmisionColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.AdmisionRow{
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+}
+
+.AdmisionFormContainer{
+  margin-top: 100px;
+  margin-bottom: 90px;
+  width:40%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 600px;
+  display: flex;
+  background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
+  justify-content: center;
+}
+
+.AdmisionForm{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AdmisionForm h1 {
+  font-size: 1rem;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.AdmisionForm-inputs {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+.AdmisionForm-inputs p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
+ 
+.AdmisionForm-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.AdmisionForm-input {
+  display: block;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.AdmisionForm-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+.AdmisionForm-input-btn {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(38, 169, 245) 0%,
+    rgb(10, 199, 202) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.AdmisionForm-input-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  color: #fff;
+}
+
+.AdmisionForm-input-btn:disabled {
+  background: grey;
+  cursor: no-drop;
+}
+
+.AdmisionForm-input-login {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.AdmisionForm-input-login a {
+  text-decoration: none;
+  color: #27cdff;
+  font-weight: 600;
+}
+
+.AdmisionForm-input-message {
+  display: flex;
+  padding: 15px;
+  outline: none;
+  border-radius: 2px;
+  height: 100px;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.AdmisionForm-input-message::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+#AdmisionMargin{
+    margin-top: 50px;
+}
+
+.SubtituloAdmision{
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    	font-family: 'Comfortaa';
+    padding-left: 40px;
+  }
+
+  .TextoAdmision{
+    font-family: 'Comfortaa';
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+@media  (max-width: 768px) { 
+    .AdmisionRow{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        text-align: center;
+        grid-gap: 10px;  
+    }
+    .SubtituloAdmision{
+        text-align: left;
+        font-weight: bold;
+        font-family: 'Comfortaa';
+      }
+    .TextoAdmision{
+        text-align: left;
+        padding-left: 40px;
+    }
+    .AdmisionFormContainer{
+      width: 90%;
+    }
+        
+}
+
+#AdmisionWidth{
+  width: 100%;
+}
+
+#IngresoDatos{
+  height: 100%;
+  width: 70%;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px!important;
+}
+#TituloDatos{
+  font-size: 40px;
+  color: #595959;
+  font-family: "Comfortaa";
+  text-align: center;
+}
+
+#TituloDatos2{
+  font-size: 50px;
+  font-family: "Comfortaa";
+  color: #1e88e5;
+  text-align: center;
+}
+
+#IngresoBoton{
+    width: 80%; 
+    height: auto;
+    margin-top: 10px;
+    border-radius: 2px;
+    background: linear-gradient(
+      90deg,
+      rgb(38, 169, 245) 0%,
+      rgb(10, 199, 202) 100%
+    );
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+    align-items: center!important;
+    padding-left: 20px;    
+}
+
+#IngresoBoton:hover{
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  color: #fff;
+}
+#EliminacionBoton{
+  width: 80%; 
+  height: auto;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(245, 38, 38) 0%,
+    rgb(250, 67, 92) 100%
+  );
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  align-items: center!important;
+  padding-left: 20px;    
+}
+
+#EliminacionBoton:hover{
+cursor: pointer;
+background: linear-gradient(
+  90deg,
+  rgb(204, 16, 56) 0%,
+  rgb(148, 14, 14) 100%
+);
+transition: all 0.4s ease-out;
+color: #fff;
+}
+#ModificacionBoton{
+  width: 80%; 
+  height: auto;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(245, 121, 38) 0%,
+    rgb(202, 128, 10) 100%
+  );
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  align-items: center!important;
+  padding-left: 20px;    
+}
+
+#ModificacionBoton:hover{
+cursor: pointer;
+background: linear-gradient(
+  90deg,
+  rgb(255, 205, 39) 0%,
+  rgb(250, 147, 12) 100%
+);
+transition: all 0.4s ease-out;
+color: #fff;
+}
+
+#UsuarioBoton{
+  width: 80%; 
+  height: auto;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(38, 245, 72) 0%,
+    rgb(26, 202, 10) 100%
+  );
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  align-items: center!important;
+  padding-left: 20px;    
+}
+
+#UsuarioBoton:hover{
+cursor: pointer;
+background: linear-gradient(
+  90deg,
+  rgb(39, 255, 50) 0%,
+  rgb(20, 250, 12) 100%
+);
+transition: all 0.4s ease-out;
+color: #fff;
+}
+
+#AtrasBoton{ 
+  height: auto;
+  margin-top: 18px;
+  align-self: left;
+  background: linear-gradient(
+    90deg,
+    rgb(245, 38, 38) 0%,
+    rgb(250, 67, 92) 100%
+  );
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  align-items: center!important;
+  padding-left: 10px;
+  padding-right: 10px;  
+  margin-right: 10px;  
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  justify-self: center;
+  font-weight: bold;
+	font-family: 'Comfortaa';
+}
+
+#AtrasBoton:hover{
+cursor: pointer;
+background: linear-gradient(
+  90deg,
+  rgb(204, 16, 56) 0%,
+  rgb(148, 14, 14) 100%
+);
+transition: all 0.4s ease-out;
+color: #fff;
+}
+
+#LogoutBoton{ 
+  height: auto;
+  margin-top: 18px;
+  align-self: left;
+  background: linear-gradient(
+    90deg,
+    rgb(245, 38, 38) 0%,
+    rgb(250, 67, 92) 100%
+  );
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  align-items: center!important;
+  padding-left: 10px;
+  padding-right: 10px;    
+  border-radius: 5px;
+  justify-self: center;
+  font-weight: bold;
+	font-family: 'Comfortaa';
+  margin-bottom: 20px;
+}
+
+#LogoutBoton:hover{
+cursor: pointer;
+background: linear-gradient(
+  90deg,
+  rgb(204, 16, 56) 0%,
+  rgb(148, 14, 14) 100%
+);
+transition: all 0.4s ease-out;
+color: #fff;
+}
+
+#Rojo{
+  background: linear-gradient(
+    90deg,
+    rgb(245, 38, 38) 0%,
+    rgb(250, 67, 92) 100%
+  );
+}
+
+#Rojo:hover{
+  background: linear-gradient(
+  90deg,
+  rgb(204, 16, 56) 0%,
+  rgb(148, 14, 14) 100%
+  );
+  transition: all 0.4s ease-out;
+}
+
+#Amarillo{
+  background: linear-gradient(
+    90deg,
+    rgb(245, 121, 38) 0%,
+    rgb(202, 128, 10) 100%
+  );
+}
+
+#Amarillo:hover{
+  background: linear-gradient(
+  90deg,
+  rgb(255, 205, 39) 0%,
+  rgb(250, 147, 12) 100%
+);
+transition: all 0.4s ease-out;
+}
+
+#Verde{
+  background: linear-gradient(
+    90deg,
+    rgb(20, 161, 43) 0%,
+    rgb(22, 139, 11) 100%
+  );
+}
+
+#Verde:hover{
+  background: linear-gradient(
+  90deg,
+  rgb(39, 255, 50) 0%,
+  rgb(20, 250, 12) 100%
+);
+transition: all 0.4s ease-out;
+}
+
+
+#Separacion{
+  margin-top:20px
+}
+
+#Color1S{
+  background: #d32f2f;
+  color: white;
+}
+#Color1N{
+  background: #006cca;
+  color: white;
+}
+#Color1M{
+  background: #35b63b;
+  color: white;
+}
+
+#Color2S{
+  background: #ffcdd2;
+  width: 40%;
+}
+#Color2N{
+  background: #bbdefb;
+  width: 40%;
+}
+#Color2M{
+  background: #bbfbd0;
+  width: 40%;
+}
+
+#Color2S:hover{
+  background: #e9a9af;
+}
+#Color2N:hover{
+  background: #e4f0fa;
+}
+#Color2M:hover{
+  background: #e4fae9;
+}
+
+
+#ArchivoBlanco{
+  color:white;
+}
+

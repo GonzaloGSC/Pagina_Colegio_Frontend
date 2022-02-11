@@ -1,0 +1,89 @@
+.TituloContainer{ 
+    align-items: center;
+  }
+  
+.TituloWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+#TituloWrapper{
+    background: rgb(0, 35, 101, 0.6)!important;
+}
+  
+.TituloColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+/* .TituloRow{
+  display: grid;
+  align-items: start;
+  width: 80%;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(230px, 1fr));
+} */
+
+.Titulo{
+    font-size: 38px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(148, 148, 148);
+    font-weight: bold;
+    font-family: 'Comfortaa';
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#TituloS{
+  color: #d32f2f;
+}
+
+#TituloN{
+  color: #1e88e5;
+}
+
+#TituloM{
+  color: #35b63b;
+}
+
+.Subtitulo1{
+    font-size: 30px;
+    color: grey;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+    padding-left: 40px;
+}
+
+.Subtitulo2{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  width: 90%;
+  align-self: center;
+  text-align: justify;
+  color: grey;
+  font-weight: bold;
+	font-family: 'Comfortaa';
+  margin-bottom: 50px;
+}
+
+#Subtitulo2100{
+  width: 100%!important;
+}
+
+
+
+.texto{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    font-size: 18px;
+    /* background: blue; */
+    color: black;
+}

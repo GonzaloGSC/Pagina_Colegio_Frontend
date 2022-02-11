@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap%27');
+
+.LoginContainer{ 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    /* background-image: url('../../imagenes/FondoF.jpg');
+    background-repeat: repeat-x; */
+  }
+  .LoginWrapper h2{
+    font-size: 40px;
+    color: #0d47a1;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    margin: 30px;
+  }
+  
+.LoginWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 100%;
+}
+
+.LoginColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.LoginRow{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+}
+
+.LoginFormContainer{
+  width:40%;
+  box-shadow: 0 7px 8px 5px rgba(0, 0, 0, 0.247), 0 7px 20px 0 rgba(0, 0, 0, 0.329);
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  background: linear-gradient(90deg,rgb(100, 169, 241) 0%,rgb(12, 99, 250) 100%);
+  justify-content: center;
+}
+
+.RegisterFormContainer{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 40%;
+  box-shadow: 0 7px 8px 5px rgba(0, 0, 0, 0.247), 0 7px 20px 0 rgba(0, 0, 0, 0.329);
+  border-radius: 10px;
+  height: 690px;
+  display: flex;
+  background: linear-gradient(90deg,rgb(100, 169, 241) 0%,rgb(12, 99, 250) 100%);
+  justify-content: center;
+}
+
+.LoginForm{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginForm h1 {
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
+  color: #fff;
+}
+
+
+.LoginForm-inputs {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+.LoginForm-inputs p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+ 
+.LoginForm-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.LoginForm-input {
+  display: block;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.LoginForm-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+.LoginForm-input-btn {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(38, 169, 245) 0%,
+    rgb(10, 199, 202) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.LoginForm-input-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+  color: #fff;
+}
+
+.LoginForm-input-btn:disabled {
+  background: grey;
+  cursor: no-drop;
+}
+
+
+
+.LoginForm-input-login {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.LoginForm-input-login a {
+  text-decoration: none;
+  color: #27cdff;
+  font-weight: 600;
+}
+
+.LoginForm-input-message {
+  display: flex;
+  padding: 15px;
+  outline: none;
+  border-radius: 2px;
+  height: 100px;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.LoginForm-input-message::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+#LoginMargin{
+    margin-top: 50px;
+}
+
+.SubtituloLogin{
+    font-size: 30px;
+    color: grey;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Comfortaa";
+    padding-left: 40px;
+  }
+
+  .TextoLogin{
+    font-family: "Comfortaa";
+    text-align: left;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+#TituloH1{
+  font-family: "Comfortaa";
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+@media (max-height: 400px){
+  .LoginContainer{
+    height: 200vh;
+  }
+}
+
+@media  (max-width: 768px) { 
+    .LoginRow{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        text-align: center;
+        grid-gap: 10px;  
+    }
+    .SubtituloLogin{
+        text-align: left;
+        font-weight: bold;
+        font-family: "Comfortaa";
+    }
+    .TextoLogin{
+        text-align: left;
+    }
+    .LoginFormContainer{
+      width: 90%;
+    }
+    #TituloH1, .LoginWrapper h2{
+      text-align: center;
+      /* text-align-last: center; */
+    }        
+    .RegisterFormContainer{
+      width: 90%;
+    }
+}
+
+

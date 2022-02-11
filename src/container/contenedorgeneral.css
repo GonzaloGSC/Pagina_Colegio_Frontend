@@ -1,0 +1,7 @@
+.ContenedorGeneral{
+    min-height: 100vh;
+    position: relative;
+    background-image: url('../imagenes/FondoF.jpg');
+    /* background-size: contain; */
+    background-repeat: repeat-y repeat-x;
+}

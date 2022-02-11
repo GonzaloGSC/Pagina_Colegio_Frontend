@@ -1,0 +1,133 @@
+.NosotrosContainer{ 
+    align-items: center;
+  }
+  
+.NosotrosWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+#NosotrosWrapperS{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+    background: rgba(224, 101, 101, 0.6)!important;
+}
+  
+#NosotrosWrapperN{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background: rgba(101, 144, 224, 0.6)!important;
+}
+
+#NosotrosWrapperM{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background: rgba(101, 224, 128, 0.6)!important;
+}
+.NosotrosColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.NosotrosRow{
+  display: grid;
+  align-items: start;
+  width: 90%;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(230px, 1fr));
+}
+
+.SubtituloNosotros{
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 40px;
+  font-family: "Comfortaa";
+}
+
+#SubtituloS1{
+  color: #d32f2f;
+
+}
+#SubtituloN{
+  color: #42a5f5;
+
+}
+#SubtituloM1{
+  color: #35b63b;
+}
+
+
+.TextoNosotros{
+  font-family: "Comfortaa";
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    /* background: blue; */
+    color: black;
+}
+
+.SubtituloNosotros2{
+    font-size: 30px;
+    /* background: fuchsia; */
+    text-align: center;
+    font-weight: bold;
+    font-family: "Comfortaa";
+    padding-bottom: 30px;
+  }
+
+
+#Subtitulo2S{
+  color: #d32f2f;
+}
+
+#Subtitulo2N{
+  color: #1e88e5;
+}
+
+#Subtitulo2M{
+  color: #35b63b;
+}
+
+.TextoNosotros2{
+  font-family: "Comfortaa";
+      display: flex;
+    text-align: justify;
+    text-align-last: center;
+    flex-direction: column;
+    padding: 10px 10px 20px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    /* background: firebrick; */
+    color: Black;
+}
+
+
+@media  (max-width: 960px) {
+    .NosotrosRow{
+     grid-template-columns: repeat(1, minmax(200px, 1fr));
+     text-align: center;
+     grid-gap: 10px;  
+    }
+
+    .SubtituloNosotros{
+        text-align: center;
+    }
+    .SubtituloNosotros2{
+     text-align: center;
+    }
+    .TextoNosotros2{
+        text-align: justify;
+    }
+   }

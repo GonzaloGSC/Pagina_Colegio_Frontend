@@ -1,0 +1,130 @@
+.NivelContainer{ 
+    display: flex;
+    justify-content: center;
+  }
+  
+.NivelWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+}
+
+.NivelColumn{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+.NivelRow{
+    display: grid;
+    align-self: center;
+    width: 80%;
+    margin-bottom: 40px;
+    -webkit-box-shadow: -9px 11px 24px -5px rgba(0,0,0,0.62);
+    -moz-box-shadow: -9px 11px 24px -5px rgba(0,0,0,0.62);
+    box-shadow: -9px 11px 24px -5px rgba(0,0,0,0.62);
+    border-radius: 10px;
+    grid-template-columns: repeat(1, minmax(230px, 1fr));
+    background: transparent;
+}
+
+.NivelRow2{
+    display: grid;
+    justify-self: center;
+    grid-gap: 30px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+}
+
+
+.NivelTitulo{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Comfortaa";
+}
+
+#NivelTituloS{
+    color: #d32f2f;
+}
+
+#NivelTituloN{
+    color: #1e88e5;
+}
+
+#NivelTituloM{
+    color: #35b63b;
+}
+
+
+.NivelImagen{
+    display:flex;
+    width: 90%;
+    justify-self: center;
+    border-radius: 30px;
+    /* background: red; */
+}
+
+.NivelTexto{
+    font-family: "Comfortaa";
+    display: flex;
+    text-align: justify;
+    /* text-align-last: justify; */
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#NivelTextoS{
+    background: #ffcdd2;
+
+}
+#NivelTextoN{
+    background: #e3f2fd;
+
+}
+#NivelTextoM{
+    background: rgba(101, 224, 128, 0.6)
+
+}
+
+
+#NivelTextoFila{
+    text-align: left!important;
+}
+
+#NivelTexto{
+    text-align: center!important;
+    background: none!important;
+    padding-bottom: 30px!important;
+}
+
+
+/* .NivelLista{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+    font-size: 18px;
+    background: cyan;
+    color: black;
+    margin-left: 20px;
+} */
+
+@media  (max-width: 900px) { /*960px antes*/
+    .NivelRow2{
+     grid-template-columns: repeat(1, minmax(200px, 1fr));
+     text-align: center;
+     grid-gap: 10px;
+    }
+}

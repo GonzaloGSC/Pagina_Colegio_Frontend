@@ -1,0 +1,54 @@
+.SliderContainer2{
+    align-items: center;
+    /* background: red; */
+}
+
+
+.SliderWrapper2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    /* background: rosybrown; */
+}
+
+
+.SliderColumn2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#SliderFecha2{
+    font-size: 20px;
+    text-align:end;
+    text-align-last: center;
+}
+ 
+#SliderTitulo2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.SliderItem2{
+    display: grid;
+    height: 60vh;
+    background-color: transparent;
+    align-content:flex-end;
+    align-items: center;
+}
+
+#SliderImagen{
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    width: 100%;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+}
+
+@media (max-width: 768px){
+    #SliderImagen{
+        overflow: hidden;
+    }
+}

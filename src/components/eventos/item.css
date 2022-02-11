@@ -1,0 +1,132 @@
+.EventoContainer{
+    padding: 5px 5px;
+    align-items: center;
+}
+
+
+.EventoWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.EventoColumn{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.EventoItem{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 80%;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    overflow-wrap: break-word;
+}
+
+
+#EventoItemS:hover{
+    background: #ffccbc;
+    transition: 1s;
+}
+
+#EventoItemN:hover{
+    background: rgba(122, 164, 241, 0.6);
+    transition: 1s;
+}
+
+#EventoItemM:hover{
+    background: rgba(126, 241, 122, 0.6);
+    transition: 1s;
+}
+
+
+#EventoFechaS{
+    font-size: 20px;
+    text-align: center;
+    font-weight:700;
+    font-family: 'Comfortaa';
+    color: rgba(101, 0, 0, 0.6)
+}
+
+#EventoFechaN{
+    font-size: 20px;
+    text-align: center;
+    font-weight:700;
+    font-family: 'Comfortaa';
+    color: rgb(0, 35, 101, 0.6)
+}
+#EventoFechaM{
+    font-size: 20px;
+    text-align: center;
+    font-weight:700;
+    font-family: 'Comfortaa';
+    color: rgba(12, 101, 0, 0.6)
+}
+
+#EventoTitulo{
+    font-size: 18px;
+    text-align: center;
+    text-decoration:underline; 
+    font-family: 'Comfortaa';
+}
+
+.EventoItem .descripcion{
+    font-size: 15px;
+    text-align: center;
+    overflow-wrap:break-word;
+    line-height: 0.9;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: lowercase;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+#EventoDescripcionS{
+    color: rgba(221, 2, 2, 0.6)
+}
+
+#EventoDescripcionN{
+    color: rgb(0, 35, 101, 0.6)
+}
+#EventoDescripcionM{
+    color: rgba(12, 101, 0, 0.6)
+}
+
+
+.slick-prev:before, .slick-next:before {
+    color: rgb(0, 35, 101, 0.6)!important;
+    font-size: 25px!important;
+}
+.slick-next:before{
+    margin-left: -13px!important;
+}
+
+#InicioFinS{
+    background-color: #c7593dfd;;
+}
+#InicioFinN{
+    background-color: #3d7ec7fd;;
+}
+#InicioFinM{
+    background-color: #35b63b;
+}
+
+#InicioFinColor{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Comfortaa';
+}
+
+.slick-dots{
+    opacity: 0;
+    z-index: -900000;
+}
